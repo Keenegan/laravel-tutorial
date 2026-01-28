@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChripController;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [ChripController::class,'index']);
