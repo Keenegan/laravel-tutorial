@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChripController;
+use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ChripController::class,'index']);
+Route::get('/', [ChripController::class, 'index']);
+Route::post('/chirps', [ChripController::class, 'store']);
